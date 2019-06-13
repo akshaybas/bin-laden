@@ -1,0 +1,7 @@
+class ftp {
+ package {'vsftpd':,
+ }
+ file{"/var/ftb/pub/data":
+ ensure => file,
+ content => "hello this is a devops class",
+ }
